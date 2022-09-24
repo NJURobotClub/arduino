@@ -1,0 +1,18 @@
+伺服电机
+
+
+
+
+#include <Servo.h>
+   Servo myservo; // create servo object to control a servo
+   int potpin = 0; // analog pin used to connect the potentiometer
+   int val; // variable to read the value from the analog pin
+void setup() {
+   myservo.attach(9); // attaches the servo on pin 9 to the servo object
+}
+void loop{
+    myservo.writeMicroseconds(1500);
+}
+
+关于arduino中servo库的使用可参照于https://www.basemu.com/how-to-use-the-arduino-servo-library.html
+
